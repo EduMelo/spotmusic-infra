@@ -14,3 +14,9 @@ variable "zone" {
   type        = string
   default     = "us-central-a"
 }
+
+variable "password" {
+  description = "Google Database password"
+  type        = string
+  default     = "12345678"
+}
