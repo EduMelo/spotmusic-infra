@@ -17,7 +17,7 @@ resource "google_artifact_registry_repository" "spotmusic-9ASO-grupo9-backend" {
 resource "google_sql_database_instance" "master" {
   name = "spotmusic-9ASO-grupo9-database-instance"
   database_version = "MYSQL_8"
-  region = "${var.region.default}"
+  region = var.region
     settings {
       tier = "db-g1-small"
     }
