@@ -1,7 +1,15 @@
-resource "google_artifact_registry_repository" "spotmusic-9ASO-grupo9-repository" {
+
+resource "google_artifact_registry_repository" "spotmusic-9ASO-grupo9-frontend" {
   location = var.region
-  repository_id = "spotmusic-9ASO-grupo9-repository"
-  description = "Imagens Docker"
+  repository_id = "spotmusic-9ASO-grupo9-frontend"
+  description = "Imagens Docker Frontend"
+  format = "DOCKER"
+}
+
+resource "google_artifact_registry_repository" "spotmusic-9ASO-grupo9-backend" {
+  location = var.region
+  repository_id = "spotmusic-9ASO-grupo9-backend"
+  description = "Imagens Docker Banckend"
   format = "DOCKER"
 }
 
