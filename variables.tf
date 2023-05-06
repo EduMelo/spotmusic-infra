@@ -1,5 +1,5 @@
 variable "project_name" {
-  description = "spotmusic-9ASO-grupo9"
+  description = "Grupo 09"
   type        = string
 }
 
